@@ -1,0 +1,11 @@
+#define USE_CODE_PAGE
+	-> is in file Tools/ParserTools.h
+
+To use the codepage you have to enable the #define first, then in ja2.ini you can add to the [Ja2 Settings] 
+section the key "CODE_PAGE = path to the codepage file". I myself just put the file in my user profile directory (~ root in VFS) 
+and set CODE_PAGE to german.cp.
+
+It should work just fine with any Windows version, but i have no idea, 
+whether the keyboard codes are identical for every Windows language. 
+But you can find them out by setting DEBUG_KEYS to true in ja2.ini, section [Ja2 Settings]. 
+When doing so, a file (DebugKeys.txt) will be created, where the every keypress will be recorded (in format "counter : keyboard code").
