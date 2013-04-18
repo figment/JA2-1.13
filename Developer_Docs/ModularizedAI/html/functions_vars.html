@@ -70,6 +70,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -78,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,8 +95,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ai_index_to_factory_mapping_
 : <a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a0401a196ee3b7b781a5d46cbb8d388b0">AI::tactical::PlanFactoryLibrary</a>
 </li>
-<li>controlled_npc_
-: <a class="el" href="structAI_1_1tactical_1_1PlanInputData.html#aad82f3aba853733ed1675703858cbac7">AI::tactical::PlanInputData</a>
+<li>caller1_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#ad91536cc7a708fc8680827ebc5cba0a1">AI::tactical::AIInputData</a>
+</li>
+<li>caller2_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#adc36312d73afc96fc7e07f17e88e647a">AI::tactical::AIInputData</a>
+</li>
+<li>corpse_grid_
+: <a class="el" href="classAI_1_1tactical_1_1CrowSeekCorpsePlan.html#a02999874459c642655f078aab3c31a4a">AI::tactical::CrowSeekCorpsePlan</a>
+, <a class="el" href="classAI_1_1tactical_1_1CrowPeckPlan.html#a29a32a15391c3fab7d3f71225d703791">AI::tactical::CrowPeckPlan</a>
+</li>
+<li>event_type_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#a335782540ef81a916df53488ec73b0d9">AI::tactical::AIInputData</a>
+</li>
+<li>grid_no_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#afd5a35843d618eb59627fd589de17276">AI::tactical::AIInputData</a>
 </li>
 <li>initialize_called_
 : <a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#acd2e0d9f1b993da249bf98000d856ec1">AI::tactical::AbstractPlanFactory</a>
@@ -101,17 +117,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>instance_
 : <a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a7bf68db24e92103f79630a76544b8633">AI::tactical::PlanFactoryLibrary</a>
 </li>
-<li>npc_to_plan_for_
-: <a class="el" href="structAI_1_1tactical_1_1AIInputData.html#a9ff87d774566ad3a423d6f6ec64b9801">AI::tactical::AIInputData</a>
+<li>level_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#ae8b8e07352ad388246f62813bd04ba20">AI::tactical::AIInputData</a>
+</li>
+<li>noise_maker_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#a6c9bf0fb7a7d80b577e2950d94a723a9">AI::tactical::AIInputData</a>
+</li>
+<li>npc_
+: <a class="el" href="classAI_1_1tactical_1_1Plan.html#a7bbb7403cf9f020329e98676537f05d9">AI::tactical::Plan</a>
+</li>
+<li>opponent_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#afa71cf97300264996c761b77250d2c4e">AI::tactical::AIInputData</a>
 </li>
 <li>registred_factories_
 : <a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a96ff485e2a3e7b888cd207139801da8e">AI::tactical::PlanFactoryLibrary</a>
+</li>
+<li>subplans_
+: <a class="el" href="classAI_1_1tactical_1_1PlanList.html#af1e5dc99ede0b588eecb465d59265230">AI::tactical::PlanList</a>
+</li>
+<li>tactical_status_
+: <a class="el" href="classAI_1_1tactical_1_1PlanInputData.html#a9ecda54e15b7b08583306e6a16704f84">AI::tactical::PlanInputData</a>
+</li>
+<li>turn_based_
+: <a class="el" href="classAI_1_1tactical_1_1PlanInputData.html#a8d2ebb975c3a5a0296dd458a2807e0bc">AI::tactical::PlanInputData</a>
+</li>
+<li>type_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#a002f6d4a8beb91e45d109dd66d9db6d4">AI::tactical::AIInputData</a>
+</li>
+<li>volume_
+: <a class="el" href="classAI_1_1tactical_1_1AIInputData.html#a11e23ea7761a0b71909f3983723abb92">AI::tactical::AIInputData</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2013 15:45:45 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 18 2013 20:24:53 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

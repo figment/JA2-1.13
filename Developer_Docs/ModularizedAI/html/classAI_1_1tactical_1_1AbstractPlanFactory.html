@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,7 +104,7 @@ Inheritance diagram for AI::tactical::AbstractPlanFactory:</div>
  <div class="center">
   <img src="classAI_1_1tactical_1_1AbstractPlanFactory.png" usemap="#AI::tactical::AbstractPlanFactory_map" alt=""/>
   <map id="AI::tactical::AbstractPlanFactory_map" name="AI::tactical::AbstractPlanFactory_map">
-<area href="classAI_1_1tactical_1_1LegacyAIPlanFactory.html" title="Concrete Factory. Generates the LegacyAIPlan, making NPCs do exactly what it did before this AI modul..." alt="AI::tactical::LegacyAIPlanFactory" shape="rect" coords="0,56,199,80"/>
+<area href="classAI_1_1tactical_1_1LegacyAIPlanFactory.html" title="Concrete Factory. Generates the appropriate LegacyAIPlan, making NPCs do exactly what it did before t..." alt="AI::tactical::LegacyAIPlanFactory" shape="rect" coords="0,56,199,80"/>
 <area href="classAI_1_1tactical_1_1NullPlanFactory.html" title="Concrete Factory. Generates the NullPlan, making a NPC do absolutely nothing." alt="AI::tactical::NullPlanFactory" shape="rect" coords="209,56,408,80"/>
 </map>
  </div></div>
@@ -115,18 +115,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a394c5ff1f19d4b6bf212af783a8d9232"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#a394c5ff1f19d4b6bf212af783a8d9232">initialize_called</a> () const </td></tr>
 <tr class="memitem:aec4218f608ffad3c7db6610c36025c0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#aec4218f608ffad3c7db6610c36025c0f">initialize</a> ()</td></tr>
 <tr class="memdesc:aec4218f608ffad3c7db6610c36025c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for delayed initialization of ressource-intensive initialization tasks.  <a href="#aec4218f608ffad3c7db6610c36025c0f"></a><br/></td></tr>
-<tr class="memitem:ad9cad98b591b088409f2a86862dc15d2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classAI_1_1tactical_1_1Plan.html">Plan</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#ad9cad98b591b088409f2a86862dc15d2">create_plan</a> (const <a class="el" href="structAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;input)=0</td></tr>
-<tr class="memdesc:ad9cad98b591b088409f2a86862dc15d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchy creation function.  <a href="#ad9cad98b591b088409f2a86862dc15d2"></a><br/></td></tr>
-<tr class="memitem:a5afe9baafe8b352db1aa7876d0e984d6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#a5afe9baafe8b352db1aa7876d0e984d6">update_plan</a> (const <a class="el" href="structAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;input, <a class="el" href="classAI_1_1tactical_1_1Plan.html">Plan</a> *plan_to_change)=0</td></tr>
-<tr class="memdesc:a5afe9baafe8b352db1aa7876d0e984d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchy update function, called in order to update an already created plan.  <a href="#a5afe9baafe8b352db1aa7876d0e984d6"></a><br/></td></tr>
+<tr class="memitem:af8f84091214736545c30138a7fdf3412"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classAI_1_1tactical_1_1Plan.html">Plan</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#af8f84091214736545c30138a7fdf3412">create_plan</a> (SOLDIERTYPE *npc, const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;input)=0</td></tr>
+<tr class="memdesc:af8f84091214736545c30138a7fdf3412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchy creation function.  <a href="#af8f84091214736545c30138a7fdf3412"></a><br/></td></tr>
+<tr class="memitem:a267ce6079091e47139506e2287a9533c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#a267ce6079091e47139506e2287a9533c">update_plan</a> (SOLDIERTYPE *npc, const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;input)=0</td></tr>
+<tr class="memdesc:a267ce6079091e47139506e2287a9533c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchy update function, called in order to update an already created plan.  <a href="#a267ce6079091e47139506e2287a9533c"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acd2e0d9f1b993da249bf98000d856ec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#acd2e0d9f1b993da249bf98000d856ec1">initialize_called_</a></td></tr>
+<tr class="memdesc:acd2e0d9f1b993da249bf98000d856ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag set iff delayed initialization was already performed.  <a href="#acd2e0d9f1b993da249bf98000d856ec1"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Abstract Factory. Base class for all plan factories. </p>
-<p>The Abstract Factory design pattern is used to create instances of <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchies. The concrete factories differ not necessarily in the concrete product they produce (as is otherwise the case when using this design pattern), but in the structure of the compositions (plans are Composites) instead. Public inheritance is required for two reasons: (a) several sub-class instances are packed in a container, and this abstract class serves as the container's data type. And (b) implementation of <a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#ad9cad98b591b088409f2a86862dc15d2" title="Abstract Plan object hierarchy creation function.">create_plan()</a> and <a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#a5afe9baafe8b352db1aa7876d0e984d6" title="Abstract Plan object hierarchy update function, called in order to update an already created plan...">update_plan()</a> is forced for concrete subclasses. </p>
+<p>The Abstract Factory design pattern is used to create instances of <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchies. The concrete factories differ not necessarily in the concrete product they produce (as is otherwise the case when using this design pattern), but in the structure of the compositions (plans are Composites) instead. Public inheritance is required for two reasons: (a) several sub-class instances are packed in a container, and this abstract class serves as the container's data type. And (b) implementation of <a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#af8f84091214736545c30138a7fdf3412" title="Abstract Plan object hierarchy creation function.">create_plan()</a> and <a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html#a267ce6079091e47139506e2287a9533c" title="Abstract Plan object hierarchy update function, called in order to update an already created plan...">update_plan()</a> is forced for concrete subclasses. </p>
 </div><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a751d9f02aa6d627b7bbd8f202315c2fd"></a>
 <div class="memitem">
@@ -152,7 +153,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="ad9cad98b591b088409f2a86862dc15d2"></a>
+<a class="anchor" id="af8f84091214736545c30138a7fdf3412"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -162,9 +163,19 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classAI_1_1tactical_1_1Plan.html">Plan</a>* AI::tactical::AbstractPlanFactory::create_plan </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
+          <td class="paramtype">SOLDIERTYPE *&#160;</td>
+          <td class="paramname"><em>npc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -178,13 +189,14 @@ Private Attributes</h2></td></tr>
 <p>The subclasses (i.e., Concrete Factories) implpmenting this routine contain the decision-making <a class="el" href="namespaceAI.html">AI</a> core.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input</td><td>A pointer to a structure containing all required input data in order for the <a class="el" href="namespaceAI.html">AI</a> algorithms to perform their task. At the moment, simply a wrapper around SOLDIERTYPE. Future versions might require other datatypes; without the wrapper, <em>every</em> Concrete Factory ever created would need to be changed in this event. </td></tr>
+    <tr><td class="paramname">npc</td><td>The NPC the plan is for </td></tr>
+    <tr><td class="paramname">input</td><td>A reference to a structure containing all required input data in order for the <a class="el" href="namespaceAI.html">AI</a> algorithms to perform their task. At the moment, empty. Future versions might require other datatypes; without the wrapper, <em>every</em> Concrete Factory ever created would need to be changed in this event. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object tree representing the produced strategy </dd></dl>
 
-<p>Implemented in <a class="el" href="classAI_1_1tactical_1_1NullPlanFactory.html#a5263bdbd156b30168667214414ef755d">AI::tactical::NullPlanFactory</a>, and <a class="el" href="classAI_1_1tactical_1_1LegacyAIPlanFactory.html#ab5ec1d3ef3d51c9ad7a89c80119b02d6">AI::tactical::LegacyAIPlanFactory</a>.</p>
+<p>Implemented in <a class="el" href="classAI_1_1tactical_1_1NullPlanFactory.html#a88fb715bf2c3c5a046e51b2811119b4f">AI::tactical::NullPlanFactory</a>, and <a class="el" href="classAI_1_1tactical_1_1LegacyAIPlanFactory.html#ad7bc3453dea12ab0435f02e7efefa3a5">AI::tactical::LegacyAIPlanFactory</a>.</p>
 
 </div>
 </div>
@@ -237,7 +249,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5afe9baafe8b352db1aa7876d0e984d6"></a>
+<a class="anchor" id="a267ce6079091e47139506e2287a9533c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -247,14 +259,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void AI::tactical::AbstractPlanFactory::update_plan </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
+          <td class="paramtype">SOLDIERTYPE *&#160;</td>
+          <td class="paramname"><em>npc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classAI_1_1tactical_1_1Plan.html">Plan</a> *&#160;</td>
-          <td class="paramname"><em>plan_to_change</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -270,15 +282,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Abstract <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchy update function, called in order to update an already created plan. </p>
+<p>If no plan exists, it is created; this should not be the general case, but might happen for 'interrupted' NPCs that haven't had the chance to plan yet.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input</td><td>A pointer to a structure containing all required input data in order for the <a class="el" href="namespaceAI.html">AI</a> algorithms to perform their task </td></tr>
-    <tr><td class="paramname">plan_to_change</td><td>The <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object hierarchy that is to be updated </td></tr>
+    <tr><td class="paramname">npc</td><td>A pointer to the npc owning the ai_masterplan_ to be changed. </td></tr>
+    <tr><td class="paramname">input</td><td>A reference to a structure containing all required input data in order for the <a class="el" href="namespaceAI.html">AI</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section post"><dt>Postcondition</dt><dd>npc-&gt;ai_masterplan_ is not null </dd></dl>
 
-<p>Implemented in <a class="el" href="classAI_1_1tactical_1_1NullPlanFactory.html#a0d87980c20c973614e749a13238cd6ed">AI::tactical::NullPlanFactory</a>, and <a class="el" href="classAI_1_1tactical_1_1LegacyAIPlanFactory.html#aa380aef3b12886cfce7107ac1680a980">AI::tactical::LegacyAIPlanFactory</a>.</p>
+<p>Implemented in <a class="el" href="classAI_1_1tactical_1_1NullPlanFactory.html#a96089773f75c30d11907b17956ca1b6d">AI::tactical::NullPlanFactory</a>, and <a class="el" href="classAI_1_1tactical_1_1LegacyAIPlanFactory.html#ae5d00447ba7719451817728db3fa210c">AI::tactical::LegacyAIPlanFactory</a>.</p>
 
 </div>
 </div>
@@ -301,6 +315,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Flag set iff delayed initialization was already performed. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -309,7 +325,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2013 15:45:45 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 18 2013 20:24:52 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

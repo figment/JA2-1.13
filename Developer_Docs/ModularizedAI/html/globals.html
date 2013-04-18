@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -75,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,17 +87,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div><ul>
-<li>RTHandleAI()
-: <a class="el" href="LegacyAIPlan_8cpp.html#a0c32862f20fba04e681de870f1077418">LegacyAIPlan.cpp</a>
+<li>CreatureDecideAction()
+: <a class="el" href="LegacyCreaturePlan_8cpp.html#aabaf998879709c5276c3af8c6dda53f0">LegacyCreaturePlan.cpp</a>
 </li>
-<li>TurnBasedHandleNPCAI()
-: <a class="el" href="LegacyAIPlan_8cpp.html#ab74f0a00fbbdbb3d888d7ad7f5a65466">LegacyAIPlan.cpp</a>
+<li>gfUIInDeadlock
+: <a class="el" href="Plan_8cpp.html#a99598dfb258d41f5162c1bbe02fd48f0">Plan.cpp</a>
+</li>
+<li>gUIDeadlockedSoldier
+: <a class="el" href="Plan_8cpp.html#a19b8bd563b7d783ddd502457a5e08ff8">Plan.cpp</a>
+</li>
+<li>HandleAITacticalTraversal()
+: <a class="el" href="Plan_8cpp.html#ab8b92563a3ad0716fede67c6bdae2c13">Plan.cpp</a>
+</li>
+<li>ZombieDecideAction()
+: <a class="el" href="LegacyZombiePlan_8cpp.html#a603b1311227fdc5a52ce6472112e82aa">LegacyZombiePlan.cpp</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2013 15:45:45 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 18 2013 20:24:53 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

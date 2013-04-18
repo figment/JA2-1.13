@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,8 +104,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af875007d3e9426435e25abe6d7548c52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAI_1_1tactical_1_1Plan.html">Plan</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#af875007d3e9426435e25abe6d7548c52">create_plan</a> (size_t index, <a class="el" href="structAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;input) const </td></tr>
-<tr class="memdesc:af875007d3e9426435e25abe6d7548c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a plan for the given input using the factory at the given index.  <a href="#af875007d3e9426435e25abe6d7548c52"></a><br/></td></tr>
+<tr class="memitem:a0f74a4b759cfe3712fc025ed7b14c273"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAI_1_1tactical_1_1Plan.html">Plan</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a0f74a4b759cfe3712fc025ed7b14c273">create_plan</a> (size_t index, SOLDIERTYPE *npc, const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;input) const </td></tr>
+<tr class="memdesc:a0f74a4b759cfe3712fc025ed7b14c273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a plan for the given input using the factory at the given index.  <a href="#a0f74a4b759cfe3712fc025ed7b14c273"></a><br/></td></tr>
+<tr class="memitem:a0878a2ba8a5386b3f35519d8e7502da6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a0878a2ba8a5386b3f35519d8e7502da6">update_plan</a> (size_t intdex, SOLDIERTYPE *npc, const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;input) const </td></tr>
+<tr class="memdesc:a0878a2ba8a5386b3f35519d8e7502da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a plan for the given input using the factory at the given index.  <a href="#a0878a2ba8a5386b3f35519d8e7502da6"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -120,14 +122,18 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a96ff485e2a3e7b888cd207139801da8e"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
 <a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html">AbstractPlanFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a96ff485e2a3e7b888cd207139801da8e">registred_factories_</a></td></tr>
+<tr class="memdesc:a96ff485e2a3e7b888cd207139801da8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mapping of factory names to pointers of said factories.  <a href="#a96ff485e2a3e7b888cd207139801da8e"></a><br/></td></tr>
 <tr class="memitem:a0401a196ee3b7b781a5d46cbb8d388b0"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="classAI_1_1tactical_1_1AbstractPlanFactory.html">AbstractPlanFactory</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a0401a196ee3b7b781a5d46cbb8d388b0">ai_index_to_factory_mapping_</a></td></tr>
+<tr class="memdesc:a0401a196ee3b7b781a5d46cbb8d388b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mapping of bAIIndex to factory pointers.  <a href="#a0401a196ee3b7b781a5d46cbb8d388b0"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a7bf68db24e92103f79630a76544b8633"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html">PlanFactoryLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html#a7bf68db24e92103f79630a76544b8633">instance_</a> = 0</td></tr>
+<tr class="memdesc:a7bf68db24e92103f79630a76544b8633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only instance, required for singleton pattern implementation.  <a href="#a7bf68db24e92103f79630a76544b8633"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Singleton. A "library" containing all available PlanFactories, accessible via the strings returned by their get_name() function. </p>
+<p>Used as one "entry point" for the new <a class="el" href="namespaceAI.html">AI</a> system within the legacy code (the other being the 'execute()' methods of <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a>) Handles the mapping of a SOLDIERTYPE's bAIIndex to a concrete plan factory instantiation. </p>
 </div><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac68a50a28777276d8b518a6a5bf82fd7"></a>
 <div class="memitem">
@@ -153,7 +159,7 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2>Member Function Documentation</h2>
-<a class="anchor" id="af875007d3e9426435e25abe6d7548c52"></a>
+<a class="anchor" id="a0f74a4b759cfe3712fc025ed7b14c273"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -166,7 +172,13 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;&#160;</td>
+          <td class="paramtype">SOLDIERTYPE *&#160;</td>
+          <td class="paramname"><em>npc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;&#160;</td>
           <td class="paramname"><em>input</em>&#160;</td>
         </tr>
         <tr>
@@ -181,6 +193,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>Index of the concrete plan factory to use, set in the constructor via ini settings </td></tr>
+    <tr><td class="paramname">npc</td><td>The NPC the created plan is for </td></tr>
     <tr><td class="paramname">input</td><td>The environmental data required for a factory to plan </td></tr>
   </table>
   </dd>
@@ -192,7 +205,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the only instance of the <a class="el" href="classAI_1_1tactical_1_1PlanFactoryLibrary.html" title="Singleton. A &quot;library&quot; containing all available PlanFactories, accessible via the strings returned by...">PlanFactoryLibrary</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A new plan </dd></dl>
 
 </div>
 </div>
@@ -222,6 +235,55 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0878a2ba8a5386b3f35519d8e7502da6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AI::tactical::PlanFactoryLibrary::update_plan </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SOLDIERTYPE *&#160;</td>
+          <td class="paramname"><em>npc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classAI_1_1tactical_1_1AIInputData.html">AIInputData</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update a plan for the given input using the factory at the given index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index of the concrete plan factory to use, set in the constructor via ini settings </td></tr>
+    <tr><td class="paramname">npc</td><td>The NPC the updated plan is for </td></tr>
+    <tr><td class="paramname">input</td><td>The environmental data required for a factory to plan </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>for invalid index </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>for valid index, but undefined factory (most likely due to typo in AI.ini) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2>Member Data Documentation</h2>
 <a class="anchor" id="a0401a196ee3b7b781a5d46cbb8d388b0"></a>
 <div class="memitem">
@@ -240,6 +302,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A mapping of bAIIndex to factory pointers. </p>
 
 </div>
 </div>
@@ -261,6 +325,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Only instance, required for singleton pattern implementation. </p>
+
 </div>
 </div>
 <a class="anchor" id="a96ff485e2a3e7b888cd207139801da8e"></a>
@@ -281,6 +347,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>A mapping of factory names to pointers of said factories. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -290,7 +358,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2013 15:45:45 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 18 2013 20:24:52 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

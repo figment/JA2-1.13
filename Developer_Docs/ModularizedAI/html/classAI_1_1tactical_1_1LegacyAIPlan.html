@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,13 +87,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classAI_1_1tactical_1_1LegacyAIPlan-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AI::tactical::LegacyAIPlan Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Component/Concrete Product. Generates a <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> that executes the <a class="el" href="namespaceAI.html">AI</a> as it was before modularization.  
+<p>Component/Concrete Product. Wrapper/Re-Write of DecideAction()  
  <a href="classAI_1_1tactical_1_1LegacyAIPlan.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="LegacyAIPlan_8h_source.html">LegacyAIPlan.h</a>&gt;</code></p>
@@ -109,14 +110,68 @@ Inheritance diagram for AI::tactical::LegacyAIPlan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec305abc051f7a45905dd65abc184b5f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1LegacyAIPlan.html#aec305abc051f7a45905dd65abc184b5f">execute</a> (bool turn_based, <a class="el" href="structAI_1_1tactical_1_1PlanInputData.html">PlanInputData</a> &amp;manipulated_object)</td></tr>
-<tr class="memdesc:aec305abc051f7a45905dd65abc184b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> execution is the encapsulation of an action sequence, making up higher-level building blocks.  <a href="#aec305abc051f7a45905dd65abc184b5f"></a><br/></td></tr>
+<tr class="memitem:a1e04bf4c48ee88e6a35f26afa1bc8c00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1LegacyAIPlan.html#a1e04bf4c48ee88e6a35f26afa1bc8c00">LegacyAIPlan</a> (SOLDIERTYPE *npc)</td></tr>
+<tr class="memitem:a69713f81a280437f2f67b57bd4adcdbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1LegacyAIPlan.html#a69713f81a280437f2f67b57bd4adcdbc">execute</a> (<a class="el" href="classAI_1_1tactical_1_1PlanInputData.html">PlanInputData</a> &amp;environment)</td></tr>
+<tr class="memdesc:a69713f81a280437f2f67b57bd4adcdbc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> execution is the encapsulation of an "action sequence", which can be used to make up higher-level building blocks.  <a href="#a69713f81a280437f2f67b57bd4adcdbc"></a><br/></td></tr>
+<tr class="memitem:a2343d515688a60620ed0f6abcffa6dd3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1LegacyAIPlan.html#a2343d515688a60620ed0f6abcffa6dd3">done</a> () const </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0db796869a1d1cdfc34aece236a8618b"><td class="memItemLeft" align="right" valign="top">SOLDIERTYPE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1Plan.html#a0db796869a1d1cdfc34aece236a8618b">get_npc</a> ()</td></tr>
+<tr class="memdesc:a0db796869a1d1cdfc34aece236a8618b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the controlled NPC.  <a href="#a0db796869a1d1cdfc34aece236a8618b"></a><br/></td></tr>
+<tr class="memitem:a274853e0c34c2132e209ec5deb39fee3"><td class="memItemLeft" align="right" valign="top">const SOLDIERTYPE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAI_1_1tactical_1_1Plan.html#a274853e0c34c2132e209ec5deb39fee3">get_npc</a> () const </td></tr>
+<tr class="memdesc:a274853e0c34c2132e209ec5deb39fee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the controlled NPC.  <a href="#a274853e0c34c2132e209ec5deb39fee3"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Component/Concrete Product. Generates a <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> that executes the <a class="el" href="namespaceAI.html">AI</a> as it was before modularization. </p>
-<p>A simple encapsulation of the functions <a class="el" href="LegacyAIPlan_8cpp.html#ab74f0a00fbbdbb3d888d7ad7f5a65466">TurnBasedHandleNPCAI()</a> and <a class="el" href="LegacyAIPlan_8cpp.html#a0c32862f20fba04e681de870f1077418">RTHandleAI()</a>, defined in TacticalAI/AIMain.cpp and TacticalAI/Realtime.cpp, respectively. The <a class="el" href="namespaceAI.html">AI</a> handles decisions for all kinds of NPCs (enemies, zombies, civilians, ...) </p>
-</div><h2>Member Function Documentation</h2>
-<a class="anchor" id="aec305abc051f7a45905dd65abc184b5f"></a>
+<div class="textblock"><p>Component/Concrete Product. Wrapper/Re-Write of DecideAction() </p>
+<p>This plan began as a simple forwarding object for DecideAction(), and will, in the course of the <a class="el" href="namespaceAI.html">AI</a> redesign, be split into elementary NPC actions. It is as such only a intermediate product used to bring structure where the is currently none. </p>
+</div><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a1e04bf4c48ee88e6a35f26afa1bc8c00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AI::tactical::LegacyAIPlan::LegacyAIPlan </td>
+          <td>(</td>
+          <td class="paramtype">SOLDIERTYPE *&#160;</td>
+          <td class="paramname"><em>npc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2>Member Function Documentation</h2>
+<a class="anchor" id="a2343d515688a60620ed0f6abcffa6dd3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AI::tactical::LegacyAIPlan::done </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Determine if the plan is finished.</p>
+<p>The semantics are not "this plan &lt;em&gt;can&lt;/em&gt; be aborted" - every plan must anticipate that - but instead "this plan cannot be continued"; for example, a movement plan is finished once the destination is reached, as no further movement can be carried out by the plan. </p>
+<dl class="section return"><dt>Returns</dt><dd>true iff the plan can no longer be executed (or execution will always lead to AI_ACTION_NONE) </dd></dl>
+
+<p>Implements <a class="el" href="classAI_1_1tactical_1_1Plan.html#af2be118838bb18b92532af6a9e2670b1">AI::tactical::Plan</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69713f81a280437f2f67b57bd4adcdbc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -126,19 +181,9 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void AI::tactical::LegacyAIPlan::execute </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>turn_based</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classAI_1_1tactical_1_1PlanInputData.html">PlanInputData</a> &amp;&#160;</td>
+          <td class="paramname"><em>environment</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structAI_1_1tactical_1_1PlanInputData.html">PlanInputData</a> &amp;&#160;</td>
-          <td class="paramname"><em>manipulated_object</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -148,17 +193,66 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> execution is the encapsulation of an action sequence, making up higher-level building blocks. </p>
-<p>Each plan objects represents a high-level action, implemented by means of lower-level actions. These lower level actions can be other Plans subtypes; at some point, a <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object has no further sub-plans, i.e., the objet is no composition, but a component, forming a leaf in the <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> hierarchy. The components' lower level actions are formed by the fundamental npc actions made available outside the <a class="el" href="namespaceAI.html">AI</a> framework.</p>
+<p><a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> execution is the encapsulation of an "action sequence", which can be used to make up higher-level building blocks. </p>
+<p>Each plan objects represents a high-level action, implemented by means of lower-level actions. These lower level actions can be other Plans subtypes; at some point, a <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> object has no further sub-plans, i.e., the objet is no composition, but a component, forming a leaf in the <a class="el" href="classAI_1_1tactical_1_1Plan.html" title="Composite/Abstract Product. Base class for all plan compositions and components.">Plan</a> hierarchy. The components' lower level actions are formed by the fundamental NPC actions which must be made available outside the <a class="el" href="namespaceAI.html">AI</a> framework.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">turn_based</td><td>true if turn-based mode is active, false for real-time mode </td></tr>
-    <tr><td class="paramname">manipulated_object</td><td>Encapsulation of around object(s) a plan may manipulate. </td></tr>
+    <tr><td class="paramname">environment</td><td>Encapsulation of environmental data required for plan execution </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classAI_1_1tactical_1_1Plan.html#acf3fc53ed2aa632f11b144b044534051">AI::tactical::Plan</a>.</p>
+<p>Implements <a class="el" href="classAI_1_1tactical_1_1Plan.html#a322a8cf3d9b141404df2489df3e72379">AI::tactical::Plan</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0db796869a1d1cdfc34aece236a8618b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOLDIERTYPE* AI::tactical::Plan::get_npc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a pointer to the controlled NPC. </p>
+
+</div>
+</div>
+<a class="anchor" id="a274853e0c34c2132e209ec5deb39fee3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SOLDIERTYPE* AI::tactical::Plan::get_npc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a pointer to the controlled NPC. </p>
 
 </div>
 </div>
@@ -169,7 +263,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2013 15:45:45 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 18 2013 20:24:52 for Jagged Alliance 2 Modularized AI by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
