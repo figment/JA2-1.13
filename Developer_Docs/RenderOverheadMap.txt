@@ -1,0 +1,10 @@
+RenderOverheadMap()
+
+
+- Der AUfbau erfolgt Zeilenweise
+--> Alle 8 Pixel wird ein Tile (Breite = 8, Höhe = 4) hingesetzt. Es wird bei X = 0 begonnen
+----> Wenn das Ende der Zeile erreicht ist (es werden einfach die Pixel abgefrag ob >= 640) dann nächste Zeile
+--> Jede ungerade Zeile wird bei X = 4 begonnen, damit die Tiles ineinander abschließen. Jede Zeile rückt um 2 Pixel nach unten
+
+
+
